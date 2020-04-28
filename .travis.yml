@@ -12,6 +12,7 @@ script:
 - sudo apt-get install conan -y
 - mkdir conan_files && cd conan_files
 - conan install ..
+- cd ..
 
 - cmake .
 - cmake --build .
