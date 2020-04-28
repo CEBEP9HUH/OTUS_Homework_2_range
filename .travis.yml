@@ -1,15 +1,7 @@
 language: cpp
 before_script:
-- sudo apt-get install libgtest-dev -y
-script:
-- mkdir gtest
-- cd gtest
-- cmake /usr/src/gtest/
-- cmake --build .
-- sudo cp *.a /usr/lib/
-- cd ..
-
 - sudo apt-get install conan -y
+script:
 - mkdir conan_files && cd conan_files
 - conan install ..
 - cd ..
