@@ -22,9 +22,6 @@ target_link_libraries(ip_filter PRIVATE
     ${CONAN_LIBS}
 )
 
-find_package(GTest REQUIRED)
-include_directories(${GTEST_INCLUDE_DIRS})
-
 if(MSVC)
     target_compile_options(ip_filter PRIVATE
         /W4
