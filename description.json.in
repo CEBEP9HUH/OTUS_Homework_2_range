@@ -1,0 +1,24 @@
+{
+    "package": {
+        "name":         "IP_filter",
+        "repo":         "OTUS_homework",
+        "subject":      "cebep9huh",
+        "vcs_url":      "https://github.com/CEBEP9HUH/OTUS_Homework_2",
+        "licenses":     "AFL-2.1"
+    },
+
+    "version":  {
+        "name":         "0.0.@PROJECT_VERSION_PATCH@"
+    },
+
+    "files":    [{
+        "includePattern":   "/home/travis/build/CEBEP9HUH/OTUS_Homework_2/ip_filter-0.0.@PROJECT_VERSION_PATCH@-Linux.deb",
+        "uploadPattern":    "/ip_filter-0.0.@PROJECT_VERSION_PATCH@-Linux.deb",
+        "matrixParams": {
+            "deb_distribution": "trusty",
+            "deb_component": "main",
+            "deb_architecture": "amd64"
+        }
+    }],
+    "publish": true
+}
