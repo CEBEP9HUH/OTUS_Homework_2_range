@@ -1,7 +1,7 @@
 language: cpp
 before_script:
 - sudo apt-get install python-pip -y
-- pip install conan
+- sudo pip install conan
 script:
 - mkdir conan_files && cd conan_files
 - conan install ..
