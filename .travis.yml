@@ -2,9 +2,11 @@ language: cpp
 before_script:
 - sudo apt-get install python-pip -y
 - sudo pip install conan
+- conan profile update settings.compiler.libcxx=libstdc++11
 script:
 - mkdir conan_files && cd conan_files
 - conan install ..
+- ls
 - cd ..
 
 - cmake .
