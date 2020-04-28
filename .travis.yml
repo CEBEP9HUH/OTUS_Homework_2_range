@@ -7,12 +7,11 @@ before_script:
 script:
 - mkdir conan_files && cd conan_files
 - conan install ..
-- ls
 - cd ..
 
-- cmake .
+- mkdir build && cd build
+- cmake ..
 - cmake --build .
-- ctest .
 - cmake --build . --target package
 deploy:
   provider: bintray

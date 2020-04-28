@@ -6,7 +6,7 @@ else()
     project(ip_filter VERSION 0.0.42)
 endif()
 
-include(${CMAKE_BINARY_DIR}/conan_files/conanbuildinfo.cmake)
+include(${CMAKE_BINARY_DIR}/../conan_files/conanbuildinfo.cmake)
 conan_basic_setup()
 
 configure_file(description.json.in description.json)
