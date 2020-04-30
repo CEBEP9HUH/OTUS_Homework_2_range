@@ -1,5 +1,5 @@
 [requires]
-range-v3/0.10.0
+range-v3/0.10.0@ericniebler/stable
 
 [generators]
 cmake
